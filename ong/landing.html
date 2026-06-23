@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptaPet — Donar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">AdoptaPet 🐱</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Acerca de</a></li>
+                <li><a href="proyectos.html">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="landing.html" class="activo">Donar</a></li>
+            </ul>
+            <button class="btn-menu" aria-label="Menú">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landing-hero">
+            <div class="landing-card">
+                <h1>Sumate a la causa</h1>
+                <p>Tu donación ayuda a rescatar, vacunar y encontrar hogar a gatos que viven en la calle. Cada aporte cuenta.</p>
+                <a href="#donar" class="btn-principal">Quiero donar</a>
+            </div>
+        </section>
+
+        <section id="donar" class="landing-donar">
+            <h2>Hacé tu donación</h2>
+            <p>Completá el formulario y te contactamos para coordinar.</p>
+
+            <form>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="monto">Monto a donar (en $)</label>
+                <input type="number" id="monto" name="monto" min="100" placeholder="Ej: 1000" required>
+
+                <label>Frecuencia</label>
+                <div class="metodo-pago">
+                    <label>
+                        <input type="radio" name="frecuencia" value="unica" checked>
+                        <span>Donación única</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="frecuencia" value="mensual">
+                        <span>Mensual</span>
+                    </label>
+                </div>
+
+                <label for="mensaje">Mensaje (opcional)</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+
+                <button type="submit">Donar ahora</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-seccion">
+                <h4>AdoptaPet</h4>
+                <p>Conectamos gatos callejeros con hogares que los esperan.</p>
+            </div>
+            <div class="footer-seccion">
+                <h4>Navegación</h4>
+                <a href="index.html">Inicio</a><br>
+                <a href="nosotros.html">Acerca de</a><br>
+                <a href="proyectos.html">¿Qué hacemos?</a><br>
+                <a href="contacto.html">Contacto</a><br>
+                <a href="landing.html">Donar</a>
+            </div>
+            <div class="footer-seccion">
+                <h4>Contacto</h4>
+                <p>Email: info@adoptapet.org</p>
+                <p>Tel: +54 11 1234-5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Angel Aldana — Diseño y Desarrollo Web — UADE 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

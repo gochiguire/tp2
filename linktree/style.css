@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b1a14;
+    font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+    color: #f5d0c5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 16px;
+}
+
+.container {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #774936;
+    color: #f5d0c5;
+    border-radius: 32px;
+    border: 2px solid #d69f7e;
+    padding: 40px 24px;
+}
+
+/* ===== Profile ===== */
+.profile {
+    padding: 16px;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #d69f7e;
+    margin-bottom: 16px;
+}
+
+.profile-name {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.profile-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #f5d0c5;
+    margin-bottom: 20px;
+    opacity: 0.85;
+}
+
+/* ===== Social Media ===== */
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #d69f7e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ===== Nav Links ===== */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.nav-item {
+    box-sizing: content-box;
+    background-color: #3c0000;
+    width: 80%;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto 14px auto;
+    border: 4px solid #3c0000;
+    border-radius: 50px;
+    position: relative;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #f5d0c5;
+    display: block;
+    height: 100%;
+}
+
+.nav-item img {
+    float: left;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 4px 0 0 4px;
+}
+
+.nav-item span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 17px;
+    color: #f5d0c5;
+}
+
+.nav-item:hover {
+    background-color: #f5d0c5;
+    border-color: #f5d0c5;
+}
+
+.nav-item:hover span {
+    color: #3c0000;
+}
+
+/* ===== Position page ===== */
+.position-img {
+    width: 300px;
+    margin: 8px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 16px 8px;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 24px;
+        padding: 28px 12px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 22px;
+    }
+
+    .profile-title {
+        font-size: 14px;
+    }
+
+    .social-media li {
+        margin: 0 6px;
+    }
+
+    .social-media a {
+        font-size: 13px;
+    }
+
+    .nav-item {
+        width: 90%;
+        height: 52px;
+        line-height: 52px;
+    }
+
+    .nav-item img {
+        height: 44px;
+        width: 44px;
+        margin: 4px 0 0 2px;
+    }
+
+    .nav-item span {
+        font-size: 15px;
+    }
+}
+
+/* ===== Tablet ===== */
+@media (min-width: 600px) and (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+
+    .nav-item {
+        width: 75%;
+    }
+}
